@@ -25,6 +25,12 @@ get data awards
 
 
 Berikut screenshot seed db postgresql yang sudah dilakukan sebelumnya :
+1. Table awards
+https://github.com/luthfimhmn/awards/blob/main/img_demo/db_award.png?raw=true
+
+2. Table user
+https://github.com/luthfimhmn/awards/blob/main/img_demo/db_user.png?raw=true
+
 
 
 
