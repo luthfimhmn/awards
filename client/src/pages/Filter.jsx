@@ -39,6 +39,7 @@ function Filter() {
 
         <h1>Search By Filter</h1>
         <br />
+
         <HistoryCard data={arrHistory} />
         <br />
         <br />
