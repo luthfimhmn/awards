@@ -1,7 +1,7 @@
 const authorization = async (req,res,next) => {
     try {
-        const {award_id} = req.params;
-        req.kocak = 'kocak nih'
+        const {user_id} = req.params;
+        //harusnya nanti akan sesuai dengan award yang dimiliki oleh user tersebut.
         next()
     } catch (error) {
         next(error)
