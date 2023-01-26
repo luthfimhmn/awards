@@ -53,17 +53,17 @@ function Filter() {
         <br />
         <br />
         <h2>Awards Type</h2>
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-        <label for="vehicle1">All Type</label>
+        <input type="checkbox" id="All Type" name="All Type" value="All Type" />
+        <label for="All Type">All Type</label>
         <br />
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-        <label for="vehicle2">Vouchers</label>
+        <input type="checkbox" id="Vouchers" name="Vouchers" value="Vouchers" />
+        <label for="Vouchers">Vouchers</label>
         <br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3">Products</label>
+        <input type="checkbox" id="Products" name="Products" value="Products" />
+        <label for="Products">Products</label>
         <br />
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
-        <label for="vehicle3">Others</label>
+        <input type="checkbox" id="Others" name="Others" value="Others" />
+        <label for="Others">Others</label>
         <br />
         <Button
           onClick={(e) => {
