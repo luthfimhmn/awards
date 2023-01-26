@@ -10,25 +10,28 @@ import HistoryCard from "../components/historyCard";
 
 function Filter() {
   const navigate = useNavigate();
-  const [dataSlide, setDataSlide] = useState(0);
-  const [filterHistory, setFilterHistory] = useState([]);
+  // const [dataPoin, setPoin] = useState(0);
+  // const [type, setType] = useState("")
+  const [history, setHistory] = useState({ poin: "", type: "" });
+  const [arrHistory, setArrHistory] = useState([]);
 
   useEffect(() => {
-    setFilterHistory(JSON.parse(window.localStorage.getItem("filterHistory")));
+    setArrHistory(JSON.parse(window.localStorage.getItem("arrHistory")));
   }, []);
 
   const clearFilter = () => {
-    setFilterHistory([]);
-    window.localStorage.clear();
+    setArrHistory([]);
+    window.localStorage.setItem("arrHistory", "");
   };
 
-  const addFilterHistory = async (value) => {
-    setFilterHistory([...filterHistory, value]);
-    window.localStorage.setItem("filterHistory", JSON.stringify(filterHistory));
+  const addFilterHistory = ({ poin, type }) => {
+    setHistory({ poin, type });
+    setArrHistory([...arrHistory, history]);
+    window.localStorage.setItem("arrHistory", JSON.stringify(arrHistory));
   };
 
   return (
-    <>
+    <div className="filterPage">
       <div className="row">
         <div className="column"></div>
         <div className="column"></div>
@@ -36,7 +39,7 @@ function Filter() {
 
         <h1>Search By Filter</h1>
         <br />
-        <HistoryCard data={filterHistory} />
+        <HistoryCard data={arrHistory} />
         <br />
         <br />
         <h2>Poin Needed</h2>
@@ -64,20 +67,19 @@ function Filter() {
         <br />
         <Button
           onClick={(e) => {
-            addFilterHistory("testing");
-            // navigate("/awards");
+            addFilterHistory({ poin: 20, type: "Vouchers" });
           }}
         >
           Filter
         </Button>
-        {filterHistory ? (
+        {arrHistory ? (
           <Button onClick={() => clearFilter()}>Clear</Button>
         ) : (
           <></>
         )}
       </div>
       <div className="row"></div>
-    </>
+    </div>
   );
 }
 
