@@ -1,0 +1,30 @@
+.card {
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; 
+  margin-bottom: 2rem; 
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 30rem;
+  }
+
+  .Testong {
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .Testing {
+    justify-content: left;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 6rem;
+    color: rgb(33, 31, 31);
+    font-weight: bold;
+  }
+
+  .imageTransparent {
+    opacity: 0.5;
+  }

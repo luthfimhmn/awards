@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Testing Awards 1",
+        "type": "Vouchers",
+        "point_to_exchange": 200,
+        "image": "image.jpg",
+        "user_id": 1
+    },
+    {
+        
+        "name": "Testing Awards 2", 
+        "type": "Products",
+        "point_to_exchange": 200,
+        "image": "image.jpg",
+        "user_id": 1
+    },
+    {
+        
+        "name": "Testing Awards 3",
+        "type": "Gift Cards",
+        "point_to_exchange": 200,
+        "image": "image.jpg",
+        "user_id": 1
+    },
+    {
+        "name": "Testing Awards 4",
+        "type": "Vouchers",
+        "point_to_exchange": 200,
+        "image": "image.jpg",
+        "user_id": 1
+    }
+]
